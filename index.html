@@ -30,10 +30,19 @@
       </div>
      
     <button id="Btn_fibo" type="button" class="btn btn-primary" onclick="fibo()">Let's Fib</button>
-
-    <p id="log"></p>
+    <div class="container-fluid">
+      <div class="row align-items-start" >
+        
+          <textarea id="log"></textarea>
+        
+      </div>
+    </div> 
+    
     </div>
     
+    <div id="foo">
+
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
@@ -44,6 +53,7 @@
           seconds = clock.getSeconds()  
          var number=seconds;   
           var fibonacci = [];
+          var fibonacciul = [];
           var seed0 = Math.trunc(minutes/10);
           var seed1 = minutes % 10;
           if (seed1 < seed0)  {
@@ -64,6 +74,9 @@
           console.log(fibonacci);
           fibotxt = JSON.stringify(fibonacci)
           document.getElementById("log").innerHTML = fibotxt;
+          
+          
+
           return fibonacci;         
       }
 
